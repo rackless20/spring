@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+       <bean class="com.midsem.Custmor" name="C1">
+ <property name="cid" value="2122000233"></property>
+ <property name="cname" value="Hetvi"></property>
+ <property name="caddress" value="Manjalpur"></property>
+ </bean>
+ 
+ <bean class="com.midsem.Order" name="O1" autowire="byName">
+ <property name="oid" value="090909"></property>
+ <property name="oname" value="printed kurti"></property>
+ <property name="qty" value="3"></property>
+ </bean>
+ </beans>
+

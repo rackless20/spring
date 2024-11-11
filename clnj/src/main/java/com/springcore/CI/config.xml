@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"> 
+
+
+<bean class="com.springcore.CI.Address" name="addr">
+  <constructor-arg value="GOTRI"></constructor-arg>
+  <constructor-arg value="390021" type="int"></constructor-arg>
+</bean> 
+
+
+<bean class="com.springcore.CI.Person" name="per">
+     <constructor-arg value="101"></constructor-arg>
+     <constructor-arg value="hetvi"></constructor-arg>
+     <constructor-arg ref="addr"></constructor-arg>
+</bean>
+</beans>
